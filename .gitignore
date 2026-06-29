@@ -1,0 +1,8 @@
+# Claude Code memory — not for version control
+.claude/
+
+# DS_Store (macOS)
+.DS_Store
+
+# Windows thumbnails
+Thumbs.db
