@@ -162,18 +162,18 @@ import { services } from '../data/services.ts';
   <Footer />
 </BaseLayout>
 
-<script>
-  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+<script define:vars={{ contactEmail: site.email }}>
+  const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
       const data = new FormData(form);
-      const name    = (data.get('name')    as string) || '';
-      const email   = (data.get('email')   as string) || '';
-      const company = (data.get('company') as string) || '';
-      const service = (data.get('service') as string) || '';
-      const message = (data.get('message') as string) || '';
+      const name    = (data.get('name')    ) || '';
+      const email   = (data.get('email')   ) || '';
+      const company = (data.get('company') ) || '';
+      const service = (data.get('service') ) || '';
+      const message = (data.get('message') ) || '';
 
       const subject = `Website enquiry from ${name}`;
       const body = [
@@ -186,7 +186,7 @@ import { services } from '../data/services.ts';
         message,
       ].join('\n');
 
-      const mailto = `mailto:${encodeURIComponent('info@gothamcityholding.com.au')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailto = `mailto:${encodeURIComponent(contactEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
     });
   }

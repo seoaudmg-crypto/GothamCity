@@ -245,8 +245,6 @@ import Icon from '../components/Icon.astro';
     width: 100%;
   }
   .hero__inner {
-    max-width: var(--container-max);
-    margin: 0 auto;
     padding: 100px var(--section-x) 100px;
     max-width: 720px;
     margin-left: var(--section-x);
@@ -342,8 +340,8 @@ import Icon from '../components/Icon.astro';
     transition: border-color 0.2s, color 0.2s;
   }
   .btn-outline:hover {
-    border-color: #fff;
-    color: #fff;
+    border-color: var(--color-text-light);
+    color: var(--color-text-light);
   }
   .btn-outline-navy {
     display: inline-block;
@@ -361,7 +359,7 @@ import Icon from '../components/Icon.astro';
   }
   .btn-outline-navy:hover {
     background: var(--color-primary);
-    color: #fff;
+    color: var(--color-text-light);
   }
 
   /* ─── TRUST STRIP ─── */
