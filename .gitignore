@@ -6,3 +6,9 @@
 
 # Windows thumbnails
 Thumbs.db
+
+# Astro / Node
+node_modules/
+dist/
+.astro/
+.vercel/
