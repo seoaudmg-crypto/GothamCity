@@ -1,0 +1,207 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import CTAStrip from '../components/CTAStrip.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { services } from '../data/services.ts';
+
+const coreServices = services.slice(0, 5);
+const additionalServices = services.slice(5);
+---
+
+<BaseLayout
+  title="Our Services — Gotham City Holding"
+  description="From operational support to IT and digital delivery — a full spectrum of outsourced services, delivered by skilled professionals across every discipline."
+>
+  <Nav active="services" />
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="page-header__inner">
+      <Breadcrumb current="Services" />
+      <p class="page-header__eyebrow">WHAT WE OFFER</p>
+      <h1 class="page-header__title">Our Services</h1>
+      <p class="page-header__sub">
+        From operational support to IT and digital delivery — a full spectrum of outsourced
+        services, delivered by skilled professionals across every discipline.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CORE SERVICES ===== -->
+  <section class="services-section services-section--core">
+    <div class="services-section__inner">
+      <div class="services-section__head">
+        <p class="section-label">CORE SERVICES</p>
+        <h2 class="services-section__title">What We Deliver</h2>
+      </div>
+      <div class="services-grid">
+        {coreServices.map((s) => (
+          <ServiceCard
+            name={s.name}
+            slug={s.slug}
+            count={s.count}
+            blurb={s.tagline}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ADDITIONAL SERVICES ===== -->
+  <section class="services-section services-section--additional">
+    <div class="services-section__inner">
+      <div class="services-section__head">
+        <p class="section-label">ADDITIONAL SERVICES</p>
+        <h2 class="services-section__title">Beyond the Core</h2>
+      </div>
+      <div class="services-grid">
+        {additionalServices.map((s) => (
+          <ServiceCard
+            name={s.name}
+            slug={s.slug}
+            count={s.count}
+            blurb={s.tagline}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <CTAStrip />
+
+  <!-- ===== FOOTER ===== -->
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ─── Shared section label ─── */
+  .section-label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent-dark);
+    margin: 0;
+  }
+
+  /* ─── PAGE HEADER ─── */
+  .page-header {
+    background: var(--color-primary);
+    width: 100%;
+  }
+
+  .page-header__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 110px var(--section-x);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .page-header__eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0;
+  }
+
+  .page-header__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.15;
+  }
+
+  .page-header__sub {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    max-width: 760px;
+  }
+
+  /* ─── SERVICES SECTIONS ─── */
+  .services-section {
+    width: 100%;
+  }
+
+  .services-section--core {
+    background: var(--color-bg);
+  }
+
+  .services-section--additional {
+    background: var(--color-bg-alt);
+  }
+
+  .services-section__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 96px var(--section-x);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .services-section__head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .services-section__title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 3vw, 2.125rem);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* ─── CARD GRID ─── */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 1024px) {
+    .page-header__inner {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 639px) {
+    .page-header__inner {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .services-section__inner {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
