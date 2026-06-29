@@ -243,11 +243,14 @@ import Icon from '../components/Icon.astro';
   .hero {
     background: var(--color-primary);
     width: 100%;
+    min-height: calc(100vh - 72px); /* fill viewport below the 72px sticky nav */
+    display: flex;
+    align-items: center; /* vertically center content like the design (hero is 680px, justify center) */
+    padding: 80px var(--section-x);
   }
   .hero__inner {
-    padding: 100px var(--section-x) 100px;
     max-width: 720px;
-    margin-left: var(--section-x);
+    width: 100%;
   }
   .hero__eyebrow {
     display: flex;
@@ -406,7 +409,7 @@ import Icon from '../components/Icon.astro';
     display: grid;
     grid-template-columns: 1fr 480px;
     gap: 64px;
-    align-items: start;
+    align-items: center; /* vertically center the two columns, matching the design */
   }
   .intro__left {
     display: flex;
@@ -670,13 +673,16 @@ import Icon from '../components/Icon.astro';
 
   /* Tablet ≤ 1024px */
   @media (max-width: 1024px) {
-    .hero__inner {
-      margin-left: 0;
+    .hero {
+      min-height: auto;
       padding: 80px var(--section-x);
+    }
+    .hero__inner {
       max-width: 100%;
     }
     .intro__inner {
       grid-template-columns: 1fr;
+      align-items: start;
     }
     .intro__box {
       width: 100%;
@@ -699,7 +705,7 @@ import Icon from '../components/Icon.astro';
 
   /* Mobile < 640px */
   @media (max-width: 639px) {
-    .hero__inner {
+    .hero {
       padding: 64px var(--section-x);
     }
     .hero__title-line1,
