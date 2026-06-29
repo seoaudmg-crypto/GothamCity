@@ -1,5 +1,8 @@
-# Claude Code memory — not for version control
+# Local tooling & editor files
 .claude/
+
+# Internal planning notes (not for delivery)
+docs/
 
 # DS_Store (macOS)
 .DS_Store
