@@ -1,0 +1,515 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import CTAStrip from '../components/CTAStrip.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import StatItem from '../components/StatItem.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site.ts';
+
+const values = [
+  {
+    icon: 'shield-check',
+    title: 'Integrity',
+    desc: 'We do what we say — honestly, and without shortcuts.',
+  },
+  {
+    icon: 'circle-check',
+    title: 'Reliability',
+    desc: 'Consistent delivery you can plan around, every time.',
+  },
+  {
+    icon: 'eye',
+    title: 'Transparency',
+    desc: 'Clear hours, clear costs, and no surprises on the invoice.',
+  },
+  {
+    icon: 'handshake',
+    title: 'Partnership',
+    desc: 'We work as an extension of your team, invested in your outcomes.',
+  },
+];
+---
+
+<BaseLayout
+  title="About Gotham City Holding — Australian Outsourcing Company"
+  description="Gotham City Holding Pty Ltd is an Australian-registered holding company connecting businesses with skilled outsourced professionals across operations, IT, finance, and back-office functions."
+>
+  <Nav active="about" />
+
+  <!-- ===== HERO ===== -->
+  <section class="about-hero">
+    <div class="about-hero__inner">
+      <div class="about-hero__intro">
+        <Breadcrumb current="About" />
+        <p class="eyebrow">WHO WE ARE</p>
+        <h1 class="about-hero__title">About Gotham City Holding</h1>
+        <p class="about-hero__lead">
+          An Australian holding company that connects businesses with skilled outsourced
+          professionals — delivering reliable capacity across operations, IT, finance, and
+          back-office functions, all under one accountable entity.
+        </p>
+      </div>
+
+      <div class="company-details">
+        <p class="company-details__label">COMPANY DETAILS</p>
+        <div class="company-details__row">
+          <span class="company-details__key">STATUS</span>
+          <span class="company-details__val">Registered in Australia</span>
+        </div>
+        <div class="company-details__divider"></div>
+        <div class="company-details__row">
+          <span class="company-details__key">ABN</span>
+          <span class="company-details__val company-details__val--gold">{site.abn}</span>
+        </div>
+        <div class="company-details__divider"></div>
+        <div class="company-details__row">
+          <span class="company-details__key">ACN</span>
+          <span class="company-details__val company-details__val--gold">{site.acn}</span>
+        </div>
+        <div class="company-details__divider"></div>
+        <div class="company-details__row">
+          <span class="company-details__key">ESTABLISHED</span>
+          <span class="company-details__val company-details__val--gold">{site.established}</span>
+        </div>
+        <div class="company-details__divider"></div>
+        <div class="company-details__row">
+          <span class="company-details__key">HEAD OFFICE</span>
+          <span class="company-details__val company-details__val--gold">{site.headOffice}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE ARE ===== -->
+  <section class="who-we-are">
+    <div class="who-we-are__inner">
+      <div class="who-we-are__head">
+        <p class="eyebrow eyebrow--dark">WHO WE ARE</p>
+        <h2 class="who-we-are__title">A Holding Company Built for Modern Delivery</h2>
+      </div>
+      <div class="who-we-are__body">
+        <p class="body-para">
+          Gotham City Holding Pty Ltd is an Australian-registered company that helps businesses
+          access skilled professionals without the overhead of building large in-house teams. From
+          virtual assistants to software engineers, we provide the people and the structure to
+          extend your capacity on demand.
+        </p>
+        <p class="body-para">
+          We operate as a single, accountable entity. The professionals who work on your behalf are
+          engaged, managed, and billed through Gotham City Holding — so you get clear ownership,
+          consistent quality, and straightforward, transparent invoicing.
+        </p>
+        <p class="body-para">
+          Our model is simple: the right talent, matched to your needs, delivered reliably and
+          billed clearly. Whether you need ongoing support or project-based capacity, we make
+          outsourcing feel like a natural extension of your own team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION ===== -->
+  <section class="mission">
+    <div class="mission__inner">
+      <p class="eyebrow">OUR MISSION</p>
+      <p class="mission__statement">
+        To give growing businesses dependable access to skilled talent — delivered with clarity,
+        accountability, and care, under one trusted entity.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== VALUES ===== -->
+  <section class="values">
+    <div class="values__inner">
+      <div class="values__head">
+        <p class="eyebrow eyebrow--dark">OUR VALUES</p>
+        <h2 class="values__title">What We Stand For</h2>
+      </div>
+      <div class="values__grid">
+        {values.map((v) => (
+          <div class="value-card">
+            <span class="value-card__icon">
+              <Icon name={v.icon} size={30} />
+            </span>
+            <h3 class="value-card__title">{v.title}</h3>
+            <p class="value-card__desc">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="stats__inner">
+      {site.stats.map((s) => (
+        <StatItem value={s.value} label={s.label} />
+      ))}
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <CTAStrip />
+
+  <!-- ===== FOOTER ===== -->
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ─── Shared eyebrow ─── */
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0;
+  }
+
+  .eyebrow--dark {
+    color: var(--color-accent-dark);
+  }
+
+  /* ─── HERO ─── */
+  .about-hero {
+    background: var(--color-primary);
+    width: 100%;
+  }
+
+  .about-hero__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 88px var(--section-x);
+    display: flex;
+    gap: 72px;
+    align-items: flex-start;
+  }
+
+  .about-hero__intro {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .about-hero__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.25rem, 5vw, 2.875rem);
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.15;
+  }
+
+  .about-hero__lead {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+
+  /* Company Details card */
+  .company-details {
+    flex: 0 0 380px;
+    width: 380px;
+    background: var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .company-details__label {
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0 0 20px;
+  }
+
+  .company-details__row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 0;
+  }
+
+  .company-details__row:first-of-type {
+    padding-top: 0;
+  }
+
+  .company-details__row:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .company-details__key {
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+  }
+
+  .company-details__val {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    line-height: 1.4;
+  }
+
+  .company-details__val--gold {
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+
+  .company-details__divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 0;
+  }
+
+  /* ─── WHO WE ARE ─── */
+  .who-we-are {
+    background: var(--color-bg);
+    width: 100%;
+  }
+
+  .who-we-are__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 96px var(--section-x);
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+  }
+
+  .who-we-are__head {
+    flex: 0 0 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .who-we-are__title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 3vw, 2rem);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .who-we-are__body {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .body-para {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* ─── MISSION ─── */
+  .mission {
+    background: var(--color-primary);
+    width: 100%;
+  }
+
+  .mission__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 88px var(--section-x);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .mission__statement {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    font-weight: 500;
+    color: var(--color-text-light);
+    line-height: 1.4;
+    margin: 0;
+    max-width: 800px;
+  }
+
+  /* ─── VALUES ─── */
+  .values {
+    background: var(--color-bg-alt);
+    width: 100%;
+  }
+
+  .values__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 88px var(--section-x);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .values__head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .values__title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.875rem, 3vw, 2.125rem);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+  }
+
+  .values__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .value-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .value-card__icon {
+    color: var(--color-accent-dark);
+    display: block;
+    line-height: 1;
+  }
+
+  .value-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.1875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+  }
+
+  .value-card__desc {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* ─── STATS ─── */
+  .stats {
+    background: var(--color-primary);
+    width: 100%;
+  }
+
+  .stats__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 64px var(--section-x);
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .stats__inner > * {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 1024px) {
+    .about-hero__inner {
+      flex-direction: column;
+      gap: 48px;
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .company-details {
+      flex: none;
+      width: 100%;
+    }
+
+    .who-we-are__inner {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .who-we-are__head {
+      flex: none;
+      width: 100%;
+    }
+
+    .values__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats__inner {
+      flex-wrap: wrap;
+    }
+
+    .stats__inner > * {
+      flex: 1 1 calc(50% - 16px);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .about-hero__inner {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
+    .who-we-are__inner {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .mission__inner {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .values__inner {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .values__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stats__inner {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .stats__inner > * {
+      flex: none;
+      width: 100%;
+    }
+  }
+</style>
