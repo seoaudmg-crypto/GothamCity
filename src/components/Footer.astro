@@ -1,0 +1,161 @@
+---
+import { site } from '../data/site.ts';
+---
+
+<footer class="footer">
+  <div class="footer-top">
+    <!-- Brand block -->
+    <div class="footer-brand">
+      <span class="brand-name">{site.name}</span>
+      <p class="brand-tagline">{site.tagline}</p>
+    </div>
+
+    <!-- Navigation column -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <h3 class="footer-col-heading">NAVIGATION</h3>
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <!-- Contact column -->
+    <div class="footer-contact">
+      <h3 class="footer-col-heading">CONTACT</h3>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+      <a href={`tel:${site.phone}`}>{site.phone}</a>
+      <span>{site.country}</span>
+    </div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    <span>&copy; {site.copyrightYear} {site.name}. All rights reserved.</span>
+    <span>ABN: {site.abn}</span>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--color-primary-dark);
+    padding: 56px var(--section-x) 32px;
+    font-family: var(--font-body);
+  }
+
+  /* ── Top row ─────────────────────────────────────── */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  /* Brand */
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 380px;
+  }
+
+  .brand-name {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text-light);
+  }
+
+  .brand-tagline {
+    margin: 16px 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  /* Column headings */
+  .footer-col-heading {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-accent);
+    margin: 0 0 12px;
+    text-transform: uppercase;
+  }
+
+  /* Nav column */
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-nav a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .footer-nav a:hover {
+    color: var(--color-text-light);
+  }
+
+  /* Contact column */
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-contact a,
+  .footer-contact span {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+  }
+
+  .footer-contact a:hover {
+    color: var(--color-text-light);
+  }
+
+  /* ── Divider ─────────────────────────────────────── */
+  .footer-divider {
+    margin-top: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* ── Bottom row ──────────────────────────────────── */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* ── Responsive: stack below 768px ──────────────── */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .footer-brand {
+      max-width: 100%;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+</style>
