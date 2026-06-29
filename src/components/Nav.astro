@@ -1,4 +1,4 @@
----
+﻿---
 import { services } from '../data/services.ts';
 import { site } from '../data/site.ts';
 import Icon from './Icon.astro';
@@ -17,7 +17,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
 <header class="site-nav" role="banner">
   <div class="nav-inner">
     <!-- Logo -->
-    <a href="/" class="logo" aria-label={site.shortName + ' — home'}>
+    <a href="/" class="logo" aria-label={site.shortName + ' â€” home'}>
       <span class="logo-mark" aria-hidden="true">G</span>
       <span class="logo-text">
         <span class="logo-name">{site.shortName}</span>
@@ -30,7 +30,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
       <a href="/" class:list={['nav-link', { 'nav-link--active': active === 'home' }]}>Home</a>
 
       <!-- Services with mega-menu -->
-      <div class="services-wrap" role="navigation" aria-label="Services menu">
+      <div class="services-wrap">
         <a
           href="/services"
           class:list={['nav-link', { 'nav-link--active': active === 'services' }]}
@@ -114,7 +114,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
 </header>
 
 <style>
-  /* ─── Base header ─────────────────────────────────────── */
+  /* â”€â”€â”€ Base header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .site-nav {
     position: sticky;
     top: 0;
@@ -132,7 +132,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     gap: 32px;
   }
 
-  /* ─── Logo ────────────────────────────────────────────── */
+  /* â”€â”€â”€ Logo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .logo {
     display: flex;
     align-items: center;
@@ -180,7 +180,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     white-space: nowrap;
   }
 
-  /* ─── Desktop nav links ───────────────────────────────── */
+  /* â”€â”€â”€ Desktop nav links â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .desktop-links {
     display: flex;
     align-items: center;
@@ -209,7 +209,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     color: var(--color-text-light);
   }
 
-  /* ─── Services mega-menu wrapper ─────────────────────── */
+  /* â”€â”€â”€ Services mega-menu wrapper â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .services-wrap {
     position: relative;
   }
@@ -233,7 +233,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    box-shadow: 0 18px 48px rgba(27, 42, 74, 0.2);
+    box-shadow: 0 18px 48px rgba(var(--color-primary-rgb), 0.2);
     padding: 16px 12px;
     opacity: 0;
     visibility: hidden;
@@ -303,7 +303,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     flex: 1;
   }
 
-  /* ─── CTA button ──────────────────────────────────────── */
+  /* â”€â”€â”€ CTA button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .nav-cta {
     display: inline-flex;
     align-items: center;
@@ -326,7 +326,12 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     background: var(--color-accent-light);
   }
 
-  /* ─── Hamburger button ────────────────────────────────── */
+  .nav-cta:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* â”€â”€â”€ Hamburger button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .hamburger {
     display: none;
     align-items: center;
@@ -351,13 +356,13 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     display: flex;
   }
 
-  /* ─── Mobile panel ────────────────────────────────────── */
+  /* â”€â”€â”€ Mobile panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .mobile-panel {
     display: none;
     flex-direction: column;
     background: var(--color-primary);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 16px 24px 24px;
+    padding: 0 24px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
@@ -438,7 +443,7 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     align-self: flex-start;
   }
 
-  /* ─── Responsive ──────────────────────────────────────── */
+  /* â”€â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   @media (max-width: 767px) {
     .nav-inner {
       padding: 0 24px;

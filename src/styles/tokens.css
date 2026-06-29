@@ -1,6 +1,7 @@
 :root {
   /* Brand */
   --color-primary: #1B2A4A;
+  --color-primary-rgb: 27, 42, 74;
   --color-primary-dark: #111C33;
   --color-primary-light: #2A4070;
   --color-accent: #C9A84C;
