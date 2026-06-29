@@ -272,7 +272,8 @@ const catIcon: Record<string, string> = {
   }
 
   .services-wrap:hover .nav-link svg,
-  .services-wrap:focus-within .nav-link svg {
+  .services-wrap:focus-within .nav-link svg,
+  .services-wrap.mega-open .nav-link svg {
     transform: rotate(180deg);
   }
 
@@ -291,7 +292,8 @@ const catIcon: Record<string, string> = {
   }
 
   .services-wrap:hover .mega-menu,
-  .services-wrap:focus-within .mega-menu {
+  .services-wrap:focus-within .mega-menu,
+  .services-wrap.mega-open .mega-menu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -710,4 +712,26 @@ const catIcon: Record<string, string> = {
       if (slug) activateCat(slug);
     });
   });
+
+  // ── Mega-menu: keep open across the diagonal hover gap (grace period) ──
+  const servicesWrap = document.querySelector<HTMLElement>('.services-wrap');
+  const megaMenu = servicesWrap?.querySelector<HTMLElement>('.mega-menu');
+  if (servicesWrap && megaMenu) {
+    let megaTimer: ReturnType<typeof setTimeout> | undefined;
+    const openMega = () => {
+      if (megaTimer) clearTimeout(megaTimer);
+      servicesWrap.classList.add('mega-open');
+    };
+    const closeMega = () => {
+      if (megaTimer) clearTimeout(megaTimer);
+      megaTimer = setTimeout(() => servicesWrap.classList.remove('mega-open'), 250);
+    };
+    // Open when entering the trigger or the panel; close (after a grace delay)
+    // when leaving either — the delay lets the cursor cross the gap between
+    // the Services link and the centered panel without the menu vanishing.
+    servicesWrap.addEventListener('mouseenter', openMega);
+    servicesWrap.addEventListener('mouseleave', closeMega);
+    megaMenu.addEventListener('mouseenter', openMega);
+    megaMenu.addEventListener('mouseleave', closeMega);
+  }
 </script>
