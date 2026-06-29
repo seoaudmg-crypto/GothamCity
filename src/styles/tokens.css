@@ -1,0 +1,33 @@
+:root {
+  /* Brand */
+  --color-primary: #1B2A4A;
+  --color-primary-dark: #111C33;
+  --color-primary-light: #2A4070;
+  --color-accent: #C9A84C;
+  --color-accent-dark: #A8892E;
+  --color-accent-light: #E8CC7A;
+  /* Surfaces */
+  --color-bg: #F8F7F4;
+  --color-bg-alt: #EDECEA;
+  --color-surface: #FFFFFF;
+  --color-border: #DDD9D0;
+  /* Text */
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #5A6A7A;
+  --color-text-muted: #8A9AAA;
+  --color-text-light: #FFFFFF;
+  /* Type */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  /* Spacing scale */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px; --space-24: 96px;
+  /* Radius */
+  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 12px;
+  /* Layout */
+  --container-max: 1200px;
+  --section-x: 120px; /* desktop horizontal padding; reduced at breakpoints */
+}
+@media (max-width: 1024px){ :root{ --section-x: 56px; } }
+@media (max-width: 640px){ :root{ --section-x: 20px; } }
