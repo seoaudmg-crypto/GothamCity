@@ -1,0 +1,443 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import CTAStrip from '../../components/CTAStrip.astro';
+import Icon from '../../components/Icon.astro';
+import { services, type Category } from '../../data/services.ts';
+
+export function getStaticPaths() {
+  return services.map((c) => ({ params: { category: c.slug }, props: { category: c } }));
+}
+
+const { category } = Astro.props as { category: Category };
+---
+
+<BaseLayout title={`${category.name} — Gotham City Holding`}>
+  <Nav active="services" />
+
+  <!-- ===== HERO ===== -->
+  <section class="cat-hero">
+    <div class="cat-hero__inner">
+
+      <!-- Left: intro -->
+      <div class="cat-hero__intro">
+        <!-- Breadcrumb: 3-level Home / Services / category.name -->
+        <nav class="cat-breadcrumb" aria-label="Breadcrumb">
+          <ol class="cat-breadcrumb__list">
+            <li><a href="/" class="cat-breadcrumb__link">Home</a></li>
+            <li class="cat-breadcrumb__sep" aria-hidden="true">/</li>
+            <li><a href="/services" class="cat-breadcrumb__link">Services</a></li>
+            <li class="cat-breadcrumb__sep" aria-hidden="true">/</li>
+            <li class="cat-breadcrumb__current" aria-current="page">{category.name}</li>
+          </ol>
+        </nav>
+
+        <p class="cat-hero__eyebrow">SERVICE CATEGORY</p>
+        <h1 class="cat-hero__title">{category.name}</h1>
+        <p class="cat-hero__lead">{category.tagline}</p>
+
+        <a href="/contact" class="cat-hero__cta">
+          Book a Consultation
+          <Icon name="arrow-right" size={16} />
+        </a>
+      </div>
+
+      <!-- Right: At a Glance card -->
+      <div class="cat-hero__card">
+        <p class="cat-hero__card-label">AT A GLANCE</p>
+
+        <div class="cat-hero__fact">
+          <span class="cat-hero__fact-icon"><Icon name="layers" size={20} /></span>
+          <span class="cat-hero__fact-text">{category.count} specialist services</span>
+        </div>
+
+        <div class="cat-hero__fact">
+          <span class="cat-hero__fact-icon"><Icon name="sliders-horizontal" size={20} /></span>
+          <span class="cat-hero__fact-text">Flexible, scalable engagement</span>
+        </div>
+
+        <div class="cat-hero__fact">
+          <span class="cat-hero__fact-icon"><Icon name="badge-check" size={20} /></span>
+          <span class="cat-hero__fact-text">Skilled, vetted professionals</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== WHAT'S INCLUDED ===== -->
+  <section class="cat-included">
+    <div class="cat-included__inner">
+      <div class="cat-section-head">
+        <p class="cat-section-label">WHAT'S INCLUDED</p>
+        <h2 class="cat-section-title">What Our {category.name} Handle</h2>
+      </div>
+
+      <ul class="cat-included__grid">
+        {category.included.map((item) => (
+          <li class="cat-included__card">
+            <span class="cat-included__check"><Icon name="check" size={20} /></span>
+            <span class="cat-included__text">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="cat-why">
+    <div class="cat-why__inner">
+      <div class="cat-section-head">
+        <p class="cat-section-label">WHY GOTHAM CITY</p>
+        <h2 class="cat-section-title">Built for Reliable Delivery</h2>
+      </div>
+
+      <div class="cat-why__grid">
+        {category.whyUs.map((card) => (
+          <div class="cat-why__card">
+            <Icon name="badge-check" size={28} />
+            <h3 class="cat-why__card-title">{card.title}</h3>
+            <p class="cat-why__card-desc">{card.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA STRIP ===== -->
+  <CTAStrip />
+
+  <!-- ===== FOOTER ===== -->
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ─── Shared section utilities ─────────────────────────────── */
+  .cat-section-label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent-dark);
+    margin: 0;
+  }
+
+  .cat-section-head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cat-section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 3vw, 2.125rem);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* ─── HERO ──────────────────────────────────────────────────── */
+  .cat-hero {
+    background: var(--color-primary);
+    width: 100%;
+  }
+
+  .cat-hero__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 88px var(--section-x);
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 72px;
+    align-items: start;
+  }
+
+  /* Breadcrumb */
+  .cat-breadcrumb {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+  }
+
+  .cat-breadcrumb__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+
+  .cat-breadcrumb__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .cat-breadcrumb__link:hover {
+    color: var(--color-accent);
+  }
+
+  .cat-breadcrumb__sep {
+    color: rgba(255, 255, 255, 0.3);
+    user-select: none;
+  }
+
+  .cat-breadcrumb__current {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+
+  /* Intro col */
+  .cat-hero__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .cat-hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0;
+  }
+
+  .cat-hero__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 2.875rem);
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.15;
+  }
+
+  .cat-hero__lead {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .cat-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: var(--radius-sm);
+    align-self: flex-start;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .cat-hero__cta:hover {
+    background: var(--color-accent-dark);
+    color: var(--color-text-light);
+  }
+
+  /* At a Glance card */
+  .cat-hero__card {
+    background: var(--color-primary-light);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cat-hero__card-label {
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0;
+  }
+
+  .cat-hero__fact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cat-hero__fact-icon {
+    color: var(--color-accent);
+    flex-shrink: 0;
+    line-height: 0;
+  }
+
+  .cat-hero__fact-text {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    line-height: 1.4;
+  }
+
+  /* ─── WHAT'S INCLUDED ───────────────────────────────────────── */
+  .cat-included {
+    background: var(--color-bg);
+    width: 100%;
+  }
+
+  .cat-included__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 96px var(--section-x);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .cat-included__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .cat-included__card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cat-included__check {
+    color: var(--color-primary);
+    flex-shrink: 0;
+    line-height: 0;
+    margin-top: 2px;
+  }
+
+  .cat-included__text {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    line-height: 1.35;
+  }
+
+  /* ─── WHY US ────────────────────────────────────────────────── */
+  .cat-why {
+    background: var(--color-bg-alt);
+    width: 100%;
+  }
+
+  .cat-why__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 88px var(--section-x);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .cat-why__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .cat-why__card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cat-why__card svg {
+    color: var(--color-accent-dark);
+    flex-shrink: 0;
+  }
+
+  .cat-why__card-title {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .cat-why__card-desc {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* ─── RESPONSIVE ────────────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .cat-hero__inner {
+      grid-template-columns: 1fr;
+      gap: 48px;
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+
+    .cat-hero__card {
+      max-width: 400px;
+    }
+
+    .cat-included__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cat-why__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 639px) {
+    .cat-hero__inner {
+      padding-top: 56px;
+      padding-bottom: 56px;
+      gap: 32px;
+    }
+
+    .cat-hero__card {
+      max-width: 100%;
+    }
+
+    .cat-included__inner {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .cat-included__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cat-why__inner {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .cat-why__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
