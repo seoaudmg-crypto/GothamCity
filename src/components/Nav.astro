@@ -9,9 +9,18 @@ interface Props {
 
 const { active } = Astro.props;
 
-// Split services into two columns for the mega-menu
-const col1 = services.slice(0, Math.ceil(services.length / 2));
-const col2 = services.slice(Math.ceil(services.length / 2));
+// Category icon map
+const catIcon: Record<string, string> = {
+  'virtual-assistant': 'headset',
+  'resource-allocation': 'users-round',
+  'offshore-hr': 'user-check',
+  'it-services': 'code',
+  'it-resource-allocation': 'server',
+  'digital-marketing': 'megaphone',
+  'customer-support': 'headphones',
+  'back-office': 'database',
+  'rpo': 'user-search',
+};
 ---
 
 <header class="site-nav" role="banner">
@@ -41,27 +50,68 @@ const col2 = services.slice(Math.ceil(services.length / 2));
         </a>
 
         <div class="mega-menu" role="region" aria-label="Services categories">
-          <div class="mega-inner">
-            <ul class="mega-col" role="list">
-              {col1.map((svc) => (
-                <li>
-                  <a href={`/services/${svc.slug}`} class="mega-item">
-                    <span class="mega-item__name">{svc.name}</span>
-                    <Icon name="arrow-right" size={14} />
-                  </a>
-                </li>
+          <div class="mega-panel">
+            <!-- LEFT: category list -->
+            <div class="mega-cats" role="list">
+              {services.map((svc, i) => (
+                <a
+                  href={`/services/${svc.slug}`}
+                  class:list={['mega-cat-row', { 'is-active': i === 0 }]}
+                  data-cat={svc.slug}
+                  role="listitem"
+                >
+                  <span class="mega-cat-icon">
+                    <Icon name={catIcon[svc.slug] ?? 'layers'} size={18} />
+                  </span>
+                  <span class="mega-cat-name">{svc.name}</span>
+                  <span class="mega-cat-chevron">
+                    <Icon name="chevron-right" size={16} />
+                  </span>
+                </a>
               ))}
-            </ul>
-            <ul class="mega-col" role="list">
-              {col2.map((svc) => (
-                <li>
-                  <a href={`/services/${svc.slug}`} class="mega-item">
-                    <span class="mega-item__name">{svc.name}</span>
-                    <Icon name="arrow-right" size={14} />
-                  </a>
-                </li>
-              ))}
-            </ul>
+            </div>
+
+            <!-- RIGHT: detail blocks (one per category) -->
+            <div class="mega-detail-pane">
+              {services.map((svc, i) => {
+                const half = Math.ceil(svc.included.length / 2);
+                const col1 = svc.included.slice(0, half);
+                const col2 = svc.included.slice(half);
+                return (
+                  <div
+                    class:list={['mega-detail', { 'is-active': i === 0 }]}
+                    data-detail={svc.slug}
+                  >
+                    <p class="mega-detail__title">{svc.name}</p>
+                    <p class="mega-detail__desc">{svc.tagline}</p>
+                    <div class="mega-detail__checklist">
+                      <ul class="mega-checklist-col" role="list">
+                        {col1.map((item) => (
+                          <li class="mega-check-item">
+                            <span class="mega-check-icon"><Icon name="check" size={14} /></span>
+                            <span class="mega-check-text">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      {col2.length > 0 && (
+                        <ul class="mega-checklist-col" role="list">
+                          {col2.map((item) => (
+                            <li class="mega-check-item">
+                              <span class="mega-check-icon"><Icon name="check" size={14} /></span>
+                              <span class="mega-check-text">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                    <a href={`/services/${svc.slug}`} class="mega-detail__cta">
+                      <span>View all {svc.name}</span>
+                      <Icon name="arrow-right" size={15} />
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -211,6 +261,9 @@ const col2 = services.slice(Math.ceil(services.length / 2));
 
   /* â"€â"€â"€ Services mega-menu wrapper â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */
   .services-wrap {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
     position: relative;
   }
 
@@ -223,23 +276,18 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     transform: rotate(180deg);
   }
 
-  /* Mega menu panel */
+  /* Outer hoverable shell — fixed, centered, includes transparent 12px bridge */
   .mega-menu {
-    position: absolute;
-    top: calc(100% + 16px);
+    position: fixed;
+    top: 72px;
     left: 50%;
-    transform: translateX(-50%);
-    width: 640px;
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    box-shadow: 0 18px 48px rgba(var(--color-primary-rgb), 0.2);
-    padding: 16px 12px;
+    transform: translateX(-50%) translateY(-6px);
+    padding-top: 12px; /* transparent hover bridge */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.18s ease, visibility 0.18s ease, transform 0.18s ease;
-    transform: translateX(-50%) translateY(-6px);
+    z-index: 99;
   }
 
   .services-wrap:hover .mega-menu,
@@ -250,57 +298,178 @@ const col2 = services.slice(Math.ceil(services.length / 2));
     transform: translateX(-50%) translateY(0);
   }
 
-  .mega-inner {
+  /* Inner visible card */
+  .mega-panel {
+    width: 820px;
+    max-width: calc(100vw - 40px);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 18px 48px rgba(var(--color-primary-rgb), 0.2);
+    overflow: hidden;
     display: flex;
-    gap: 8px;
   }
 
-  .mega-col {
+  /* LEFT pane — category list */
+  .mega-cats {
+    width: 340px;
+    flex-shrink: 0;
+    background: var(--color-bg-alt);
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .mega-cat-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.12s ease, color 0.12s ease;
+  }
+
+  .mega-cat-icon {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    transition: color 0.12s ease;
+  }
+
+  .mega-cat-name {
+    flex: 1;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    transition: color 0.12s ease, font-weight 0.12s ease;
+  }
+
+  .mega-cat-chevron {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    transition: color 0.12s ease;
+  }
+
+  /* Active (hovered or default first) state for left row */
+  .mega-cat-row.is-active,
+  .mega-cat-row:hover,
+  .mega-cat-row:focus-visible {
+    background: var(--color-surface);
+  }
+
+  .mega-cat-row.is-active .mega-cat-icon,
+  .mega-cat-row:hover .mega-cat-icon,
+  .mega-cat-row:focus-visible .mega-cat-icon {
+    color: var(--color-primary);
+  }
+
+  .mega-cat-row.is-active .mega-cat-name,
+  .mega-cat-row:hover .mega-cat-name,
+  .mega-cat-row:focus-visible .mega-cat-name {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .mega-cat-row.is-active .mega-cat-chevron,
+  .mega-cat-row:hover .mega-cat-chevron,
+  .mega-cat-row:focus-visible .mega-cat-chevron {
+    color: var(--color-accent-dark);
+  }
+
+  /* RIGHT pane — detail */
+  .mega-detail-pane {
+    flex: 1;
+    min-width: 0;
+    background: var(--color-surface);
+    padding: 32px;
+    position: relative;
+  }
+
+  .mega-detail {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mega-detail.is-active {
+    display: flex;
+  }
+
+  .mega-detail__title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .mega-detail__desc {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .mega-detail__checklist {
+    display: flex;
+    gap: 20px;
+  }
+
+  .mega-checklist-col {
     flex: 1;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 13px;
   }
 
-  .mega-item {
+  .mega-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+  }
+
+  .mega-check-icon {
+    flex-shrink: 0;
+    color: var(--color-accent-dark);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 11px 14px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--color-text-secondary);
+    margin-top: 1px;
+  }
+
+  .mega-check-text {
     font-family: var(--font-body);
-    font-size: 14px;
-    font-weight: 500;
-    transition: background 0.12s ease, color 0.12s ease;
-  }
-
-  .mega-item:hover,
-  .mega-item:focus {
-    background: var(--color-bg-alt);
+    font-size: 13px;
     color: var(--color-text-primary);
+    line-height: 1.45;
   }
 
-  .mega-item svg {
-    flex-shrink: 0;
-    color: var(--color-text-muted);
-    opacity: 0;
-    transition: opacity 0.12s ease;
-  }
-
-  .mega-item:hover svg,
-  .mega-item:focus svg {
-    opacity: 1;
+  .mega-detail__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
     color: var(--color-accent-dark);
+    text-decoration: none;
+    padding-top: 8px;
+    transition: opacity 0.15s ease;
   }
 
-  .mega-item__name {
-    flex: 1;
+  .mega-detail__cta:hover {
+    opacity: 0.8;
   }
 
   /* â"€â"€â"€ CTA button â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */
@@ -517,4 +686,28 @@ const col2 = services.slice(Math.ceil(services.length / 2));
       }
     });
   }
+
+  // ── Mega-menu: left-row hover switches right detail ──────────────
+  const catRows = document.querySelectorAll<HTMLElement>('.mega-cat-row');
+  const detailBlocks = document.querySelectorAll<HTMLElement>('.mega-detail');
+
+  function activateCat(slug: string) {
+    catRows.forEach((row) => {
+      row.classList.toggle('is-active', row.dataset.cat === slug);
+    });
+    detailBlocks.forEach((block) => {
+      block.classList.toggle('is-active', block.dataset.detail === slug);
+    });
+  }
+
+  catRows.forEach((row) => {
+    row.addEventListener('mouseenter', () => {
+      const slug = row.dataset.cat;
+      if (slug) activateCat(slug);
+    });
+    row.addEventListener('focus', () => {
+      const slug = row.dataset.cat;
+      if (slug) activateCat(slug);
+    });
+  });
 </script>
