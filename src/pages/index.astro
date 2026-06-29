@@ -3,6 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import CTAStrip from '../components/CTAStrip.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import StatItem from '../components/StatItem.astro';
 ---
 
 <BaseLayout title="Gotham City Holding" description="Gotham City Holding — professional services group">
@@ -25,5 +29,25 @@ import Footer from '../components/Footer.astro';
   <Icon name="badge-check" />
   <Icon name="check" />
   <Icon name="unknown-icon" />
+
+  <!-- Component verification renders -->
+  <Breadcrumb current="Services" />
+
+  <div style="display:flex; gap:1rem; padding:1rem; background:#1B2A4A;">
+    <StatItem value="500+" label="Professionals deployed" />
+    <StatItem value="120" label="Clients served" />
+    <StatItem value="12" label="Countries" />
+    <StatItem value="10+" label="Years of operation" />
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; padding:1rem;">
+    <ServiceCard name="Virtual Assistant Services" slug="virtual-assistant" count={5} blurb="Reliable remote support for your day-to-day operations." />
+    <ServiceCard name="Resource Allocation" slug="resource-allocation" count={4} />
+    <ServiceCard name="IT Services" slug="it-services" count={8} />
+  </div>
+
+  <CTAStrip />
+  <CTAStrip title="Custom Title" sub="Custom subtitle text." ctaLabel="GET STARTED" />
+
   <Footer />
 </BaseLayout>

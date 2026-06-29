@@ -1,0 +1,83 @@
+---
+interface Props {
+  title?: string;
+  sub?: string;
+  ctaLabel?: string;
+}
+
+const {
+  title = 'Ready to work with us?',
+  sub = 'Get in touch to discuss your requirements and how we can support your team.',
+  ctaLabel = 'CONTACT US TODAY',
+} = Astro.props;
+---
+
+<section class="cta-strip">
+  <div class="cta-strip__inner">
+    <h2 class="cta-strip__title">{title}</h2>
+    <p class="cta-strip__sub">{sub}</p>
+    <div class="cta-strip__btn-wrap">
+      <a href="/contact" class="cta-strip__btn">{ctaLabel}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-strip {
+    background: var(--color-primary);
+    width: 100%;
+  }
+
+  .cta-strip__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 72px var(--section-x);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .cta-strip__title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .cta-strip__sub {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin: var(--space-4) 0 0;
+    max-width: 560px;
+    line-height: 1.6;
+  }
+
+  .cta-strip__btn-wrap {
+    margin-top: var(--space-8);
+  }
+
+  .cta-strip__btn {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .cta-strip__btn:hover {
+    background: var(--color-accent-dark);
+    color: var(--color-surface);
+  }
+</style>
