@@ -15,21 +15,23 @@ import Icon from '../components/Icon.astro';
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero__inner">
-      <div class="hero__eyebrow">
-        <span class="hero__eyebrow-line" aria-hidden="true"></span>
-        <span class="hero__eyebrow-text">AUSTRALIAN HOLDING COMPANY</span>
-      </div>
-      <h1 class="hero__title">
-        <span class="hero__title-line1">Professional Services,</span>
-        <span class="hero__title-line2">Delivered with Precision.</span>
-      </h1>
-      <p class="hero__sub">
-        Gotham City Holding Pty Ltd sources and deploys specialised remote talent to support our
-        clients across administration, offshore resourcing, and people operations.
-      </p>
-      <div class="hero__actions">
-        <a href="/services" class="btn-primary">VIEW OUR SERVICES</a>
-        <a href="/about" class="btn-outline">LEARN MORE</a>
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-line" aria-hidden="true"></span>
+          <span class="hero__eyebrow-text">AUSTRALIAN HOLDING COMPANY</span>
+        </div>
+        <h1 class="hero__title">
+          <span class="hero__title-line1">Professional Services,</span>
+          <span class="hero__title-line2">Delivered with Precision.</span>
+        </h1>
+        <p class="hero__sub">
+          Gotham City Holding Pty Ltd sources and deploys specialised remote talent to support our
+          clients across administration, offshore resourcing, and people operations.
+        </p>
+        <div class="hero__actions">
+          <a href="/services" class="btn-primary">VIEW OUR SERVICES</a>
+          <a href="/about" class="btn-outline">LEARN MORE</a>
+        </div>
       </div>
     </div>
   </section>
@@ -246,11 +248,15 @@ import Icon from '../components/Icon.astro';
     min-height: calc(100vh - 72px); /* fill viewport below the 72px sticky nav */
     display: flex;
     align-items: center; /* vertically center content like the design (hero is 680px, justify center) */
-    padding: 80px var(--section-x);
   }
   .hero__inner {
-    max-width: 720px;
     width: 100%;
+    max-width: calc(var(--container-max) + 2 * var(--section-x));
+    margin: 0 auto;
+    padding: 80px var(--section-x);
+  }
+  .hero__content {
+    max-width: 720px;
   }
   .hero__eyebrow {
     display: flex;
@@ -403,7 +409,7 @@ import Icon from '../components/Icon.astro';
     width: 100%;
   }
   .intro__inner {
-    max-width: var(--container-max);
+    max-width: calc(var(--container-max) + 2 * var(--section-x));
     margin: 0 auto;
     padding: 96px var(--section-x);
     display: grid;
@@ -493,7 +499,7 @@ import Icon from '../components/Icon.astro';
     width: 100%;
   }
   .how__inner {
-    max-width: var(--container-max);
+    max-width: calc(var(--container-max) + 2 * var(--section-x));
     margin: 0 auto;
     padding: 96px var(--section-x);
   }
@@ -552,7 +558,7 @@ import Icon from '../components/Icon.astro';
     width: 100%;
   }
   .services__inner {
-    max-width: var(--container-max);
+    max-width: calc(var(--container-max) + 2 * var(--section-x));
     margin: 0 auto;
     padding: 96px var(--section-x);
   }
@@ -675,10 +681,6 @@ import Icon from '../components/Icon.astro';
   @media (max-width: 1024px) {
     .hero {
       min-height: auto;
-      padding: 80px var(--section-x);
-    }
-    .hero__inner {
-      max-width: 100%;
     }
     .intro__inner {
       grid-template-columns: 1fr;
@@ -705,7 +707,7 @@ import Icon from '../components/Icon.astro';
 
   /* Mobile < 640px */
   @media (max-width: 639px) {
-    .hero {
+    .hero__inner {
       padding: 64px var(--section-x);
     }
     .hero__title-line1,
@@ -723,9 +725,14 @@ import Icon from '../components/Icon.astro';
       grid-template-columns: 1fr;
     }
     .trust-strip__list {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: var(--space-4);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px var(--space-4);
+      padding: 24px var(--section-x);
+    }
+    .trust-strip__item {
+      font-size: 0.6875rem;
+      letter-spacing: 0.04em;
     }
     .intro__box {
       padding: 32px 24px;
