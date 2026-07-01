@@ -1,4 +1,4 @@
-﻿---
+---
 import { services } from '../data/services.ts';
 import { site } from '../data/site.ts';
 import Icon from './Icon.astro';
@@ -27,11 +27,7 @@ const catIcon: Record<string, string> = {
   <div class="nav-inner">
     <!-- Logo -->
     <a href="/" class="logo" aria-label={site.shortName + ' - home'}>
-      <span class="logo-mark" aria-hidden="true">G</span>
-      <span class="logo-text">
-        <span class="logo-name">{site.shortName}</span>
-        <span class="logo-sub">PTY LTD &bull; AUSTRALIA</span>
-      </span>
+      <img src="/logo.png" alt={site.shortName} class="logo-img" />
     </a>
 
     <!-- Desktop nav links -->
@@ -182,52 +178,18 @@ const catIcon: Record<string, string> = {
     gap: 32px;
   }
 
-  /* â"€â"€â"€ Logo â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */
+  /* ── Logo ─────────────────────────────────────────────────── */
   .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
     text-decoration: none;
     flex-shrink: 0;
   }
 
-  .logo-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--color-accent);
-    border-radius: var(--radius-sm);
-    font-family: var(--font-heading);
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--color-primary);
-    line-height: 1;
-  }
-
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-  }
-
-  .logo-name {
-    font-family: var(--font-heading);
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--color-text-light);
-    line-height: 1.2;
-    white-space: nowrap;
-  }
-
-  .logo-sub {
-    font-family: var(--font-body);
-    font-size: 10px;
-    font-weight: 400;
-    color: var(--color-accent);
-    letter-spacing: 1px;
-    white-space: nowrap;
+  .logo-img {
+    height: 52px;
+    width: auto;
+    object-fit: contain;
   }
 
   /* â"€â"€â"€ Desktop nav links â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */
@@ -642,12 +604,8 @@ const catIcon: Record<string, string> = {
       padding: 0 16px;
     }
 
-    .logo-name {
-      font-size: 15px;
-    }
-
-    .logo-sub {
-      font-size: 9px;
+    .logo-img {
+      height: 44px;
     }
   }
 </style>
