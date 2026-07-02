@@ -77,8 +77,9 @@ const { category } = Astro.props as { category: Category };
       <ul class="cat-included__grid">
         {category.included.map((item) => (
           <li class="cat-included__card">
-            <span class="cat-included__check"><Icon name="check" size={20} /></span>
-            <span class="cat-included__text">{item}</span>
+            <span class="cat-included__icon-box"><Icon name={item.icon} size={28} /></span>
+            <h3 class="cat-included__title">{item.name}</h3>
+            <p class="cat-included__desc">{item.desc}</p>
           </li>
         ))}
       </ul>
@@ -94,9 +95,9 @@ const { category } = Astro.props as { category: Category };
       </div>
 
       <div class="cat-why__grid">
-        {category.whyUs.map((card) => (
+        {category.whyUs.map((card, i) => (
           <div class="cat-why__card">
-            <Icon name="badge-check" size={28} />
+            <Icon name={['timer', 'badge-check', 'sliders-horizontal', 'receipt'][i] ?? 'badge-check'} size={30} />
             <h3 class="cat-why__card-title">{card.title}</h3>
             <p class="cat-why__card-desc">{card.desc}</p>
           </div>
@@ -318,25 +319,42 @@ const { category } = Astro.props as { category: Category };
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    padding: 28px 32px;
+    padding: 32px;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     gap: 16px;
   }
 
-  .cat-included__check {
+  .cat-included__icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(var(--color-primary-rgb), 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-primary);
     flex-shrink: 0;
     line-height: 0;
-    margin-top: 2px;
   }
 
-  .cat-included__text {
+  .cat-included__title {
     font-family: var(--font-heading);
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-primary);
-    line-height: 1.35;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .cat-included__desc {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    margin: 0;
   }
 
   /* ─── WHY US ────────────────────────────────────────────────── */
