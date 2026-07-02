@@ -27,7 +27,7 @@
   /* Radius */
   --radius-sm: 4px; --radius-md: 6px; --radius-lg: 12px;
   /* Layout */
-  --container-max: 1400px;
+  --container-max: 1500px;
   --section-x: 120px; /* desktop horizontal padding; reduced at breakpoints */
 }
 @media (max-width: 1024px){ :root{ --section-x: 56px; } }
