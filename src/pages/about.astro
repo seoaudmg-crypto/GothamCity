@@ -4,7 +4,6 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import CTAStrip from '../components/CTAStrip.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
-import StatItem from '../components/StatItem.astro';
 import Icon from '../components/Icon.astro';
 import { site } from '../data/site.ts';
 
@@ -57,21 +56,6 @@ const values = [
         <div class="company-details__row">
           <span class="company-details__key">STATUS</span>
           <span class="company-details__val">Registered in Australia</span>
-        </div>
-        <div class="company-details__divider"></div>
-        <div class="company-details__row">
-          <span class="company-details__key">ABN</span>
-          <span class="company-details__val company-details__val--gold">{site.abn}</span>
-        </div>
-        <div class="company-details__divider"></div>
-        <div class="company-details__row">
-          <span class="company-details__key">ACN</span>
-          <span class="company-details__val company-details__val--gold">{site.acn}</span>
-        </div>
-        <div class="company-details__divider"></div>
-        <div class="company-details__row">
-          <span class="company-details__key">ESTABLISHED</span>
-          <span class="company-details__val company-details__val--gold">{site.established}</span>
         </div>
         <div class="company-details__divider"></div>
         <div class="company-details__row">
@@ -139,15 +123,6 @@ const values = [
           </div>
         ))}
       </div>
-    </div>
-  </section>
-
-  <!-- ===== STATS ===== -->
-  <section class="stats">
-    <div class="stats__inner">
-      {site.stats.map((s) => (
-        <StatItem value={s.value} label={s.label} />
-      ))}
     </div>
   </section>
 
