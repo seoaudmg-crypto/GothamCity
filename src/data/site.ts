@@ -3,8 +3,10 @@ const TBD = (label: string) => `[${label} — to be provided]`;
 export const site = {
   name: 'Gotham City Holding Pty Ltd',
   shortName: 'Gotham City Holding',
+  // Footer brand display name (short form). Legal name (`name`) stays in copyright + entity notes.
+  brandName: 'Gotham City',
   tagline:
-    'An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.',
+    'At GCH, we match businesses with vetted virtual assistants, offshore specialists, and HR support — skilled talent that keeps your operations running and your clients happy.',
   country: 'Australia',
   // Legitimacy facts — PLACEHOLDERS until client provides
   abn: TBD('ABN'),

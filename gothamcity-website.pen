@@ -192,14 +192,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "H6CwwR",
+                  "id": "SRbGu",
                   "name": "Eyebrow",
                   "gap": 12,
                   "alignItems": "center",
                   "children": [
                     {
                       "type": "rectangle",
-                      "id": "A4tPS",
+                      "id": "qNeeZ",
                       "name": "Line",
                       "fill": "$accent",
                       "width": 40,
@@ -207,11 +207,11 @@
                     },
                     {
                       "type": "text",
-                      "id": "QnoLz",
+                      "id": "uogtF",
                       "name": "Text",
                       "fill": "$accent",
-                      "content": "AUSTRALIAN HOLDING COMPANY",
-                      "fontFamily": "$font-body",
+                      "content": "OUTSOURCING & OFFSHORE SOLUTIONS",
+                      "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "600",
                       "letterSpacing": 2
@@ -1878,247 +1878,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "IblOi",
+          "id": "wdDou",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "Ww515",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "zOspT",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "qxvRx",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "TLNy8",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "yS5KN",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "ro6YT",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "qNcC4",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "OSyZk",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "DV72x",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "l9E3Gs",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "GlAPk",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "YF6Vk",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "Q2tkt",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "RrJYT",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "GfK24",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "ZICv6",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "zfwin",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "xICOH",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "jogcC",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "yvdBQ",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "u6O5w",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -10157,247 +9921,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "dYByn",
+          "id": "H1zAA",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "pYEEW",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "lz94l",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "KDMJs",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "nWqJN",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "THsOh",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "zlKdj",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "UGTJ6",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "V1zdw",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "k2y0bD",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "kCqDV",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "b81gtn",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "rmY7J",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "LyFc5",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "FcxU5",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "vB1RX",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "cWSX1",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "o0ach",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "CK8Rf",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "LTBfc",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "K85Glb",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "tvOLz",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -13365,247 +12893,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "Ck3e3",
+          "id": "nkjBI",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "d2elN",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "XCw0j",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "DFAiL",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "xni3C",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "YLv1V",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "t9DQwi",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "iKWGV",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "F0xDR1",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "nzR2Q",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "m6O6I",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "l25yd",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "lfGEc",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "rxpcU",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "JUeAR",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "gJxlE",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "eOhpc",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "XYkIe",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "Y94pO",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "qLw5N",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "COD87",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "Ioafi",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -15845,247 +15137,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "wgghx",
+          "id": "d5mNs",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "hT9aj",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "WQQFi",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "laITA",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "rKonm",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "B088W",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "eemGu",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "ojzU1",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "uQb14",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "V4gLN",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "FlHXJ",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "sdgLB",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "RZdom",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "fFb2k",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "XC0RP",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "eEsyC",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "aplOl",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "tmMnu",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "ooOje",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "r8IPU",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "QhmPC",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "gVLjD",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -16416,132 +15472,6 @@
                 {
                   "type": "rectangle",
                   "id": "Fgmk8",
-                  "name": "Divider",
-                  "fill": "#FFFFFF14",
-                  "width": "fill_container",
-                  "height": 1
-                },
-                {
-                  "type": "frame",
-                  "id": "RjiR3",
-                  "name": "ABN",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 4,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "N5Ku5O",
-                      "name": "Key",
-                      "fill": "#FFFFFF80",
-                      "content": "ABN",
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "500",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "IArw5",
-                      "name": "Val",
-                      "fill": "$accent",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "[ to be provided ]",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    }
-                  ]
-                },
-                {
-                  "type": "rectangle",
-                  "id": "AkCsh",
-                  "name": "Divider",
-                  "fill": "#FFFFFF14",
-                  "width": "fill_container",
-                  "height": 1
-                },
-                {
-                  "type": "frame",
-                  "id": "GYuU3",
-                  "name": "ACN",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 4,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "HRunf",
-                      "name": "Key",
-                      "fill": "#FFFFFF80",
-                      "content": "ACN",
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "500",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "CsPaH",
-                      "name": "Val",
-                      "fill": "$accent",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "[ to be provided ]",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    }
-                  ]
-                },
-                {
-                  "type": "rectangle",
-                  "id": "CFmV4",
-                  "name": "Divider",
-                  "fill": "#FFFFFF14",
-                  "width": "fill_container",
-                  "height": 1
-                },
-                {
-                  "type": "frame",
-                  "id": "jSJwu",
-                  "name": "Established",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 4,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "R4umRV",
-                      "name": "Key",
-                      "fill": "#FFFFFF80",
-                      "content": "ESTABLISHED",
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "500",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "cAgpJ",
-                      "name": "Val",
-                      "fill": "$accent",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "[ year ]",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    }
-                  ]
-                },
-                {
-                  "type": "rectangle",
-                  "id": "bjWp8",
                   "name": "Divider",
                   "fill": "#FFFFFF14",
                   "width": "fill_container",
@@ -16950,154 +15880,6 @@
         },
         {
           "type": "frame",
-          "id": "Qtg67",
-          "name": "Stats",
-          "width": "fill_container",
-          "fill": "$primary",
-          "gap": 32,
-          "padding": [
-            64,
-            120
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "fIh9D",
-              "name": "Professionals deployed",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "U0zIM0",
-                  "name": "Num",
-                  "fill": "$accent",
-                  "content": "[ X ]+",
-                  "fontFamily": "$font-heading",
-                  "fontSize": 44,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "HNeXQ",
-                  "name": "Lab",
-                  "fill": "#FFFFFFB3",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Professionals deployed",
-                  "lineHeight": 1.4,
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "SWScl",
-              "name": "Clients served",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "N4MvFL",
-                  "name": "Num",
-                  "fill": "$accent",
-                  "content": "[ X ]",
-                  "fontFamily": "$font-heading",
-                  "fontSize": 44,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "ZQnOW",
-                  "name": "Lab",
-                  "fill": "#FFFFFFB3",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Clients served",
-                  "lineHeight": 1.4,
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "WjKc1",
-              "name": "Countries",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "e0Tb9Y",
-                  "name": "Num",
-                  "fill": "$accent",
-                  "content": "[ X ]",
-                  "fontFamily": "$font-heading",
-                  "fontSize": 44,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "kLMDN",
-                  "name": "Lab",
-                  "fill": "#FFFFFFB3",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Countries",
-                  "lineHeight": 1.4,
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "sn9ju",
-              "name": "Years of operation",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "p0CYB",
-                  "name": "Num",
-                  "fill": "$accent",
-                  "content": "[ X ]+",
-                  "fontFamily": "$font-heading",
-                  "fontSize": 44,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "UmzAm",
-                  "name": "Lab",
-                  "fill": "#FFFFFFB3",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Years of operation",
-                  "lineHeight": 1.4,
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
           "id": "ghayr",
           "name": "CTAStrip",
           "width": "fill_container",
@@ -17194,247 +15976,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "kfStU",
+          "id": "v0wc0M",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "dCEVm",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "EyiOG",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "G66nur",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "D3RRv",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "O8RVM",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "Oitei",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "COZlb",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "u026D",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "LYlaR",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "o96iVB",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Y0RZy",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "BZevy",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "dhj9V",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "R7qsZ",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "B9jSYq",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "DuSwE",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "y5irq3",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "fK0JF",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Q5wWK",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "ZKrOj",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "oAlyf",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -18100,72 +16646,6 @@
                 },
                 {
                   "type": "frame",
-                  "id": "QutoY",
-                  "name": "Phone",
-                  "width": "fill_container",
-                  "gap": 14,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "u4uPy",
-                      "name": "IconBox",
-                      "width": 44,
-                      "height": 44,
-                      "fill": "#1B2A4A0F",
-                      "cornerRadius": 8,
-                      "justifyContent": "center",
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "icon",
-                          "id": "cny5B",
-                          "name": "Icon",
-                          "width": 20,
-                          "height": 20,
-                          "icon": "phone",
-                          "library": "lucide",
-                          "fill": "$primary"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "wNiRA",
-                      "name": "Text",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 4,
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "H4SWK0",
-                          "name": "Key",
-                          "fill": "$text-muted",
-                          "content": "PHONE",
-                          "fontFamily": "$font-body",
-                          "fontSize": 11,
-                          "fontWeight": "600",
-                          "letterSpacing": 1
-                        },
-                        {
-                          "type": "text",
-                          "id": "DUp1D",
-                          "name": "Val",
-                          "fill": "$accent-dark",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "[ phone to be provided ]",
-                          "lineHeight": 1.4,
-                          "fontFamily": "$font-body",
-                          "fontSize": 15,
-                          "fontWeight": "600"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "U38t8y",
                   "name": "Office",
                   "width": "fill_container",
@@ -18337,247 +16817,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "c3PUGc",
+          "id": "WuQk2",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "a1P4x",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "iULS9",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "teqAf",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "E5L1bm",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "QR1dP",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "hC2TJ",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "KQ4gN",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "UhLLj",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "zrblt",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "pAq3B",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "oS2ov",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "U4Gy3",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "lfW6Q",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "epqUr",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "mXk82",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "xyDrg",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "dgjaM",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "oouJa",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Crurl",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "DYnTB",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "De1Ab",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -19711,247 +17955,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "gflKt",
+          "id": "zzU4L",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "ZmFdK",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "DLoIG",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "UiLXZ",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "s4rX8",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "W6BfAG",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "ZhHq4",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "t9eMt",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "BNiqo",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Xl4ok",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "MCt2E",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "b3DVo",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "zb8MY",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "I5ShYQ",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "nxVCa",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "RVmAy",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "PrIu0",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "PNTSh",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "r4Zspq",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "UMCub",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "Iotzf",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "oYxcW",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -21199,247 +19207,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "DdsZu",
+          "id": "EcHsi",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "kXvwt",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "fgAkx",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "tKhDx",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "X5mZ3",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "dykFy",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "Z9eZTl",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "Sm1sA",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "VjTOp",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "iv9T5",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "t5V1v",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "d3FXt2",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "OyCDw",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "ByMIk",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "bfOFE",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "IoUAo",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Yn1He",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "VofOQ",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "lyV7P",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "o1XvR4",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "GTNN0",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "IR1Lj",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -22831,247 +20603,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "O8W3C",
+          "id": "bprzk",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "GgIuo",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "mRVi9",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "qGKlg",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "s5zvG",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "K284xU",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "XZ7JJ",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "EegKf",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "R9HoBb",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Bfq2n",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "oYDs6",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "LI6yQ",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "t5xvuo",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "jC8KJ",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "OKXMe",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "UdTkr",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "e0trb",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "fpf4F",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "PhL27",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "QaKzX",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "lPl2W",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "DI8ps",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -24463,247 +21999,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "Q3rQ6",
+          "id": "uUXdw",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "cjIX7",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "HHwpV",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "Cd19i",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "hAga9",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "Q20B7",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "RIZRd",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "mqCGX",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "GDBHj",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "XRJYz",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "O5OEJT",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "A5I0b",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "QAWHX",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "HGzUT",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "G1vQy",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "k2KwrE",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "W7D6Ss",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "DrrX0",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "BPcTq",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "rroM5",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "aglj1",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "GaKVX",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -25951,247 +23251,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "KX9cp",
+          "id": "MHOMC",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "kXquY",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "q9z5uZ",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "jXyrP",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "uf08j",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "oYJ9Y",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "j1QNO",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "xMlKa",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "rJqmg",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "rJf42",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "UTna7",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "cNr4J",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "t7XUPp",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "NrOET",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "XANVC",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "i06bu",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "kn0rN",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "w3Fe7L",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "EIxQU",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "pLCh1",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "q1VtJa",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "e6kM3",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -27382,247 +24446,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "o4nNN",
+          "id": "K2jnNG",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "EcsKU",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "nZNif",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "I9a8t",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "DcrhE",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "fb2lV",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "C5jFF",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "txnxV",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "ggUMw",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "LkFpo",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Z3Pjj",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "y6E0G",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "jt94A",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "PPJHJ",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "Odrtt",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "tbSlu",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "gImBq",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "L97XG",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "SExku",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "CDupw",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "QQOSC",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "EhTcr",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -28870,247 +25698,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "RmhgY",
+          "id": "E8gzpX",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "fBK8v",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "uCtsj",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "KCVvZ",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "ePnua",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "rJeKQ",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "k8Eo4d",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "U7JSb",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "WGjjG",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "lDjcz",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "R1lcI0",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "B9t4hj",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "ctjkU",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "fSO0r",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "V7VHg",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "svPgY",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Eq7PP",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "nkNeJ",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "f3gWt",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "f0R7qA",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "WpdG2",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "aQ2ei",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -30358,247 +26950,11 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "hBX9E",
+          "id": "ZMn2e",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
-          "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "j4O5RC",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "SmNiE",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "hNFFk",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "A8Mhh",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "ZEGu3",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "d2KOOJ",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "SwWUZ",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "hdGh3",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "xe650",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "iylKV",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Jtl4G",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "T0IdqW",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "l5lQph",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "fUxWK",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "YzUrP",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "XC9KX",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Q2geXz",
-              "name": "FLineWrap",
-              "width": "fill_container",
-              "layout": "vertical",
-              "padding": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "rectangle",
-                  "id": "hoAFE",
-                  "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
-                  "height": 1
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "f1Zd5",
-              "name": "FBottom",
-              "width": "fill_container",
-              "padding": [
-                24,
-                0,
-                0,
-                0
-              ],
-              "justifyContent": "space_between",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "N3Ciy",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                },
-                {
-                  "type": "text",
-                  "id": "VIifL",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -31789,192 +28145,141 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "a0S1um",
+          "id": "Vo0cH",
+          "type": "ref",
+          "ref": "L8IZ4",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$primary-dark",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "g2QYs",
+      "x": 0,
+      "y": 4432,
+      "name": "Hero — Option A (Image)",
+      "clip": true,
+      "width": 1440,
+      "height": 680,
+      "fill": "$primary",
+      "padding": [
+        0,
+        120
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Nnyu4",
+          "name": "HeroInner",
+          "width": 600,
           "layout": "vertical",
-          "padding": [
-            56,
-            120,
-            32,
-            120
-          ],
           "children": [
             {
               "type": "frame",
-              "id": "qFucg",
-              "name": "FTop",
-              "width": "fill_container",
-              "gap": 64,
-              "justifyContent": "space_between",
+              "id": "CVMrU",
+              "name": "Eyebrow",
+              "gap": 12,
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "frame",
-                  "id": "ISbeX",
-                  "name": "FBrand",
-                  "width": 380,
-                  "layout": "vertical",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "tdzZ6",
-                      "name": "Name",
-                      "fill": "$text-light",
-                      "content": "Gotham City Holding Pty Ltd",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "w1ViOj",
-                      "name": "TW",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "padding": [
-                        16,
-                        0,
-                        0,
-                        0
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "TIH23",
-                          "name": "Tagline",
-                          "fill": "#FFFFFF8C",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "An Australian-registered holding company providing vetted virtual assistants, offshore specialists, and HR support to the firms and businesses that rely on them.",
-                          "lineHeight": 1.7,
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "rectangle",
+                  "id": "BOUXF",
+                  "name": "Line",
+                  "fill": "$accent",
+                  "width": 40,
+                  "height": 1
                 },
                 {
-                  "type": "frame",
-                  "id": "t9jPIc",
-                  "name": "Navigation",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "RykAn",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "NAVIGATION",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "f7QKr",
-                      "name": "Home",
-                      "fill": "#FFFFFF8C",
-                      "content": "Home",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "FbTr9",
-                      "name": "Services",
-                      "fill": "#FFFFFF8C",
-                      "content": "Services",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "GBs0x",
-                      "name": "About",
-                      "fill": "#FFFFFF8C",
-                      "content": "About",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "fKPBA",
-                      "name": "Contact",
-                      "fill": "#FFFFFF8C",
-                      "content": "Contact",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "QsmS5",
-                  "name": "Contact",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "MRzO8",
-                      "name": "Head",
-                      "fill": "$accent",
-                      "content": "CONTACT",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "nF9j7",
-                      "name": "info@gothamcityholding.com.au",
-                      "fill": "#FFFFFF8C",
-                      "content": "info@gothamcityholding.com.au",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "CTYgj",
-                      "name": "+61 (0) 000 000 000",
-                      "fill": "#FFFFFF8C",
-                      "content": "+61 (0) 000 000 000",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "tTRTY",
-                      "name": "Australia",
-                      "fill": "#FFFFFF8C",
-                      "content": "Australia",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
+                  "type": "text",
+                  "id": "o6ld2s",
+                  "name": "Text",
+                  "fill": "$accent",
+                  "content": "OUTSOURCING & OFFSHORE SOLUTIONS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
                 }
               ]
             },
             {
               "type": "frame",
-              "id": "wmruB",
-              "name": "FLineWrap",
+              "id": "HwKYr",
+              "name": "TitleWrap",
               "width": "fill_container",
               "layout": "vertical",
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ub46O",
+                  "name": "Line1",
+                  "fill": "$text-light",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Professional Services,",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 46,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "WXe23",
+                  "name": "Line2",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Delivered with Precision.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 46,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "opSPM",
+              "name": "SubWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vsoDe",
+                  "name": "Sub",
+                  "fill": "#FFFFFFA6",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Gotham City Holding Pty Ltd sources and deploys specialised remote talent to support our clients across administration, offshore resourcing, and people operations.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Wwn8w",
+              "name": "Actions",
+              "gap": 16,
               "padding": [
                 40,
                 0,
@@ -31983,55 +28288,707 @@
               ],
               "children": [
                 {
+                  "type": "frame",
+                  "id": "e8fXk",
+                  "name": "BtnPrimary",
+                  "fill": "$accent",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Eilzh",
+                      "name": "Label",
+                      "fill": "$primary",
+                      "content": "VIEW OUR SERVICES",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "s6UvsF",
+                  "name": "BtnOutline",
+                  "cornerRadius": 4,
+                  "stroke": "#FFFFFF80",
+                  "strokeWidth": 2,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w7hUuN",
+                      "name": "Label",
+                      "fill": "$text-light",
+                      "content": "LEARN MORE",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 8,
+          "id": "gZgFO",
+          "name": "HeroImage",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1783324262165.png",
+            "mode": "fill"
+          },
+          "width": 420,
+          "height": 480,
+          "stroke": "#C9A84C4D",
+          "strokeWidth": 1
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "xm68X",
+      "x": 0,
+      "y": 5232,
+      "name": "Hero — Option B (Contact Form)",
+      "clip": true,
+      "width": 1440,
+      "height": 680,
+      "fill": "$primary",
+      "padding": [
+        0,
+        120
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "nxxzD",
+          "name": "HeroInner",
+          "width": 600,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wAmaf",
+              "name": "Eyebrow",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
                   "type": "rectangle",
-                  "id": "R1MfH",
+                  "id": "Idxkc",
                   "name": "Line",
-                  "fill": "#FFFFFF1A",
-                  "width": "fill_container",
+                  "fill": "$accent",
+                  "width": 40,
                   "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "aJis8",
+                  "name": "Text",
+                  "fill": "$accent",
+                  "content": "OUTSOURCING & OFFSHORE SOLUTIONS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
                 }
               ]
             },
             {
               "type": "frame",
-              "id": "WonHo",
-              "name": "FBottom",
+              "id": "U6qoJ",
+              "name": "TitleWrap",
               "width": "fill_container",
+              "layout": "vertical",
               "padding": [
                 24,
                 0,
                 0,
                 0
               ],
-              "justifyContent": "space_between",
               "children": [
                 {
                   "type": "text",
-                  "id": "o1Ewn2",
-                  "name": "Copy",
-                  "fill": "#FFFFFF80",
-                  "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
+                  "id": "SFXwG",
+                  "name": "Line1",
+                  "fill": "$text-light",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Professional Services,",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 46,
+                  "fontWeight": "700"
                 },
                 {
                   "type": "text",
-                  "id": "mC3zJ",
-                  "name": "ABN",
-                  "fill": "#FFFFFF80",
-                  "content": "ABN: [PLACEHOLDER]",
+                  "id": "l7g9u",
+                  "name": "Line2",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Delivered with Precision.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 46,
+                  "fontWeight": "700",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Y8Bs1z",
+              "name": "SubWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "q9LyDd",
+                  "name": "Sub",
+                  "fill": "#FFFFFFA6",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Gotham City Holding Pty Ltd sources and deploys specialised remote talent to support our clients across administration, offshore resourcing, and people operations.",
+                  "lineHeight": 1.6,
                   "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iajgY",
+              "name": "Actions",
+              "gap": 16,
+              "padding": [
+                40,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yfrQK",
+                  "name": "BtnPrimary",
+                  "fill": "$accent",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mkUU6",
+                      "name": "Label",
+                      "fill": "$primary",
+                      "content": "VIEW OUR SERVICES",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uGYbR",
+                  "name": "BtnOutline",
+                  "cornerRadius": 4,
+                  "stroke": "#FFFFFF80",
+                  "strokeWidth": 2,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O8Ng0E",
+                      "name": "Label",
+                      "fill": "$text-light",
+                      "content": "LEARN MORE",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ekI1w",
+          "name": "ContactCard",
+          "width": 440,
+          "fill": "$surface",
+          "cornerRadius": 8,
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "u7RIf",
+              "name": "CardHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "s69lt",
+                  "name": "CardTitle",
+                  "fill": "$primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Request a Callback",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "h7dzR",
+                  "name": "CardSub",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Share your details and our team will respond within one business day.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xcM7K",
+              "name": "Fields",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nyXej",
+                  "name": "Full name",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": 4,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HGNEb",
+                      "name": "Placeholder",
+                      "fill": "$text-muted",
+                      "content": "Full name",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xzZU2",
+                  "name": "Email address",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": 4,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Nr2Qj",
+                      "name": "Placeholder",
+                      "fill": "$text-muted",
+                      "content": "Email address",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KRO9L",
+                  "name": "Company",
+                  "width": "fill_container",
+                  "fill": "$bg",
+                  "cornerRadius": 4,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Wisc8",
+                      "name": "Placeholder",
+                      "fill": "$text-muted",
+                      "content": "Company",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H14qhd",
+                  "name": "Message",
+                  "width": "fill_container",
+                  "height": 88,
+                  "fill": "$bg",
+                  "cornerRadius": 4,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "C7P6Un",
+                      "name": "Placeholder",
+                      "fill": "$text-muted",
+                      "content": "How can we help?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "m9Qu7",
+              "name": "SubmitBtn",
+              "width": "fill_container",
+              "fill": "$accent",
+              "cornerRadius": 4,
+              "padding": 14,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lHtvW",
+                  "name": "Label",
+                  "fill": "$primary",
+                  "content": "SEND ENQUIRY",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "L8IZ4",
+      "x": 0,
+      "y": -500,
+      "name": "component/Footer",
+      "reusable": true,
+      "width": 1440,
+      "fill": "$primary-dark",
+      "layout": "vertical",
+      "padding": [
+        56,
+        120,
+        32,
+        120
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "U2od2j",
+          "name": "FTop",
+          "width": "fill_container",
+          "gap": 64,
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RMf7Q",
+              "name": "FBrand",
+              "width": 380,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Mxk7S",
+                  "name": "Name",
+                  "fill": "#FFFFFF",
+                  "content": "Gotham City",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "Uwuvt",
+                  "name": "TW",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JXan2",
+                      "name": "Tagline",
+                      "fill": "#FFFFFF8C",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "At GCH, we match businesses with vetted virtual assistants, offshore specialists, and HR support — skilled talent that keeps your operations running and your clients happy.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aYcIn",
+              "name": "Navigation",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MJFnb",
+                  "name": "Head",
+                  "fill": "$accent",
+                  "content": "NAVIGATION",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Fu0Sl",
+                  "name": "Home",
+                  "fill": "#FFFFFF8C",
+                  "content": "Home",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xgxNg",
+                  "name": "Services",
+                  "fill": "#FFFFFF8C",
+                  "content": "Services",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "WKq99",
+                  "name": "About",
+                  "fill": "#FFFFFF8C",
+                  "content": "About",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "o01ele",
+                  "name": "Contact",
+                  "fill": "#FFFFFF8C",
+                  "content": "Contact",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NqQxD",
+              "name": "Contact",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "i6u0N",
+                  "name": "Head",
+                  "fill": "$accent",
+                  "content": "CONTACT",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ZZOK7",
+                  "name": "Email",
+                  "fill": "#FFFFFF8C",
+                  "content": "info@gothamcityholding.com.au",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rWExP",
+                  "name": "Country",
+                  "fill": "#FFFFFF8C",
+                  "content": "Australia",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "L34Yl",
+          "name": "FLineWrap",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            40,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "IiwgU",
+              "name": "Line",
+              "fill": "#FFFFFF1A",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dH3Gp",
+          "name": "FBottom",
+          "width": "fill_container",
+          "padding": [
+            24,
+            0,
+            0,
+            0
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "text",
+              "id": "V7jNWn",
+              "name": "Copy",
+              "fill": "#FFFFFF80",
+              "content": "© 2026 Gotham City Holding Pty Ltd. All rights reserved.",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "text",
+              "id": "d9PEX",
+              "name": "ABN",
+              "fill": "#FFFFFF80",
+              "content": "ABN: [PLACEHOLDER]",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "C1lc6",
+      "x": 12541,
+      "y": 1906,
+      "fill": "#ffffff",
+      "content": "     ",
+      "fontFamily": "Inter",
+      "fontSize": 16,
+      "fontWeight": "normal"
     }
   ],
   "variables": {

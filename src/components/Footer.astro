@@ -6,7 +6,7 @@ import { site } from '../data/site.ts';
   <div class="footer-top">
     <!-- Brand block -->
     <div class="footer-brand">
-      <span class="brand-name">{site.name}</span>
+      <span class="brand-name">{site.brandName}</span>
       <p class="brand-tagline">{site.tagline}</p>
     </div>
 
@@ -23,7 +23,6 @@ import { site } from '../data/site.ts';
     <div class="footer-contact">
       <h3 class="footer-col-heading">CONTACT</h3>
       <a href={`mailto:${site.email}`}>{site.email}</a>
-      <a href={`tel:${site.phone}`}>{site.phone}</a>
       <span>{site.country}</span>
     </div>
   </div>
