@@ -139,11 +139,6 @@ import { services } from '../data/services.ts';
           </div>
         </div>
 
-        <!-- Entity note (navy card) -->
-        <div class="entity-note">
-          <p class="entity-note__name">{site.name}</p>
-          <p class="entity-note__reg">ABN {site.abn} &middot; A registered Australian company.</p>
-        </div>
       </div>
 
     </div>
@@ -427,31 +422,6 @@ import { services } from '../data/services.ts';
   .contact-row__val--dark {
     color: var(--color-text-primary);
     font-weight: 500;
-  }
-
-  /* Entity note card */
-  .entity-note {
-    background: var(--color-primary);
-    border-radius: 12px;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .entity-note__name {
-    font-family: var(--font-heading);
-    font-size: 1.0625rem;
-    font-weight: 600;
-    color: var(--color-text-light);
-    margin: 0;
-  }
-  .entity-note__reg {
-    font-family: var(--font-body);
-    font-size: 0.8125rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.5;
-    margin: 0;
   }
 
   /* ─── RESPONSIVE ─── */

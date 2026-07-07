@@ -18,7 +18,7 @@ import Icon from '../components/Icon.astro';
       <div class="hero__content">
         <div class="hero__eyebrow">
           <span class="hero__eyebrow-line" aria-hidden="true"></span>
-          <span class="hero__eyebrow-text">OUTSOURCING &amp; OFFSHORE SOLUTIONS</span>
+          <span class="hero__eyebrow-text">OUTSOURCING & OFFSHORE SOLUTIONS</span>
         </div>
         <h1 class="hero__title">
           <span class="hero__title-line1">Professional Services,</span>
@@ -243,7 +243,16 @@ import Icon from '../components/Icon.astro';
 
   /* ─── HERO ─── */
   .hero {
-    background: var(--color-primary);
+    background-image: 
+      linear-gradient(
+        135deg,
+        rgba(17, 28, 51, 0.95) 0%,
+        rgba(27, 42, 74, 0.8) 55%,
+        rgba(27, 42, 74, 0.45) 100%
+      ),
+      url('/home_page_banner.png');
+    background-size: cover;
+    background-position: center;
     width: 100%;
     min-height: calc(85.5vh); /* fill viewport below the 72px sticky nav */
     display: flex;
