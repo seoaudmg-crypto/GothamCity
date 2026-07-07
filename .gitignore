@@ -13,3 +13,8 @@ node_modules/
 dist/
 .astro/
 .vercel/
+
+# codebase-memory-mcp (local dev tool — not part of the deliverable)
+.mcp.json
+.codebase-memory.json
+.cbmignore
