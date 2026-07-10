@@ -57,11 +57,6 @@ const values = [
           <span class="company-details__key">STATUS</span>
           <span class="company-details__val">Registered in Australia</span>
         </div>
-        <div class="company-details__divider"></div>
-        <div class="company-details__row">
-          <span class="company-details__key">HEAD OFFICE</span>
-          <span class="company-details__val company-details__val--gold">{site.headOffice}</span>
-        </div>
       </div>
     </div>
   </section>
@@ -245,17 +240,6 @@ const values = [
     line-height: 1.4;
   }
 
-  .company-details__val--gold {
-    font-weight: 600;
-    color: var(--color-accent);
-  }
-
-  .company-details__divider {
-    height: 1px;
-    background: rgba(255, 255, 255, 0.08);
-    margin: 0;
-  }
-
   /* ─── WHO WE ARE ─── */
   .who-we-are {
     background: var(--color-bg);
@@ -394,27 +378,6 @@ const values = [
     margin: 0;
   }
 
-  /* ─── STATS ─── */
-  .stats {
-    background: var(--color-primary);
-    width: 100%;
-  }
-
-  .stats__inner {
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: 64px var(--section-x);
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .stats__inner > * {
-    flex: 1 1 0;
-    min-width: 0;
-  }
-
   /* ─── RESPONSIVE ─── */
   @media (max-width: 1024px) {
     .about-hero__inner {
@@ -442,14 +405,6 @@ const values = [
     .values__grid {
       grid-template-columns: repeat(2, 1fr);
     }
-
-    .stats__inner {
-      flex-wrap: wrap;
-    }
-
-    .stats__inner > * {
-      flex: 1 1 calc(50% - 16px);
-    }
   }
 
   @media (max-width: 640px) {
@@ -475,16 +430,6 @@ const values = [
 
     .values__grid {
       grid-template-columns: 1fr;
-    }
-
-    .stats__inner {
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    .stats__inner > * {
-      flex: none;
-      width: 100%;
     }
   }
 </style>

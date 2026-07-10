@@ -117,26 +117,6 @@ import { services } from '../data/services.ts';
               <span class="contact-row__val">{site.email}</span>
             </div>
           </div>
-
-          <div class="contact-row">
-            <div class="icon-box" aria-hidden="true">
-              <Icon name="map-pin" size={20} />
-            </div>
-            <div class="contact-row__text">
-              <span class="contact-row__key">OFFICE</span>
-              <span class="contact-row__val">{site.address}</span>
-            </div>
-          </div>
-
-          <div class="contact-row">
-            <div class="icon-box" aria-hidden="true">
-              <Icon name="timer" size={20} />
-            </div>
-            <div class="contact-row__text">
-              <span class="contact-row__key">HOURS</span>
-              <span class="contact-row__val contact-row__val--dark">{site.hours}</span>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -418,10 +398,6 @@ import { services } from '../data/services.ts';
     color: var(--color-accent-dark);
     line-height: 1.4;
     word-break: break-word;
-  }
-  .contact-row__val--dark {
-    color: var(--color-text-primary);
-    font-weight: 500;
   }
 
   /* ─── RESPONSIVE ─── */
